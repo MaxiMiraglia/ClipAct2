@@ -4,17 +4,16 @@
 <nav>
     <ul class="nav nav-tabs">
         <li class="nav-item">
-            <a class="nav-link" href="/html/index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-              aria-expanded="false">
-              Noticias</a>
+              aria-expanded="false">Noticias</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="/html/pag2.html">El hito</a>
+              <a class="dropdown-item" href="pag2.html">El hito</a>
             </div>
         <li class="nav-item">
-            <a class="nav-link active" href="/html/contacto.html">¡Contáctanos!</a>
+            <a class="nav-link active" href="contacto.html">¡Contáctanos!</a>
         </li>
     </ul>
 </nav>
@@ -24,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles3.css">
+    <link rel="stylesheet" href="styles3.css">
     <link rel="icon" href="https://image.flaticon.com/icons/png/512/96/96680.png" type="image/png">
     <title>Contacto</title>
 </head>
@@ -32,7 +31,7 @@
 <body>
     <header>
         <a href="index.html">
-            <img src="/imgs/astroblog.png" alt="logo astroblog" class="img-fluid"></a>
+            <img src="imgs/astroblog.png" alt="logo astroblog" class="img-fluid"></a>
     </header>
     <h3 style="font-family:'Courier New', Courier, monospace; text-decoration: underline;"><strong>Contacto</strong></h3>
     <p>Para contactarnos, por favor llene el siguiente formulario:</p>
@@ -40,21 +39,21 @@
         <div class="row">
             <div class="col">
               <label for="formGroupExampleInput">Nombre</label>
-              <input type="text" id="nombre" class="form-control" placeholder="Entre 3 y 20 caracteres">
+              <input type="text" id="nombre" class="form-control" placeholder="Entre 3 y 20 caracteres" required>
             </div>
             <div class="col">
               <label for="formGroupExampleInput2">Apellido</label>
-              <input type="text" id="apellido" class="form-control" placeholder="Entre 3 y 20 caracteres">
+              <input type="text" id="apellido" class="form-control" placeholder="Entre 3 y 20 caracteres" required>
             </div>
           </div>
         <div class="form-group">
             <br>
             <label for="exampleInputEmail1">Dirección de correo electrónico</label>
-            <input type="text" id="email" class="form-control" aria-describedby="emailHelp" placeholder="abc@example.com">
+            <input type="text" id="email" class="form-control" aria-describedby="emailHelp" placeholder="abc@example.com" required>
         </div>
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Mensaje:</label>
-            <textarea class="form-control" id="msj" placeholder="Escriba acá su mensaje" rows="3"></textarea>
+            <textarea class="form-control" id="msj" placeholder="Escriba acá su mensaje" rows="3" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary mb-2">Enviar consulta</button>         
       </form>
@@ -71,7 +70,7 @@
         crossorigin="anonymous"></script>
 
     <!--JS Contacto-->
-    <script src="/js/validacion.js"></script> 
+    <script src="validacionFormulario.js"></script> 
 </body>
 
 </html>
