@@ -33,9 +33,10 @@ function formValidacion(){
         alert("Formato incorrecto para el email.")
         return false;
     }
+    //envío de forumlario
     else
     {
-        alert("Envío con exito");
+        alert("Envío realizado con éxito. ¡Gracias por contactarse con nosotros!");
         return true;
     }
 }
